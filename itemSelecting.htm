@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/itemSelecting.css">
+    <title>itemSelecting</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="personal">
+                <div class="profile">
+                    <a href="login.html" target="_blank">
+                        <img src="assets/css/files/blue-circle-with-white-user_78370-4707.avif" alt="profile"
+                            class="profile-img">
+                        <span class="user-name">user-name<span>
+                    </a>
+                </div>
+                <div class="buy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-bi-bag"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <span class="buy-bag">سبد خرید</span>
+                </div>
+            </div>
+            <div class="home">
+                <img src="assets/css/files/image_2026-01-04_00-55-50.png" alt="">
+                <a href="index.html">Uzi Games</a>
+            </div>
+            <div class="searchBox">
+                <div class="search">
+                    <input type="text" placeholder="search...">
+                </div>
+                <div class="searchButton">
+                    <button><img src="assets/css/files/search2.jpg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="coloredBox">
+            <div class="gameimg">
+                <img src="assets/css/files/cyberpunk.jpg" alt="">
+            </div>
+            <div class="container2">
+                <div class="content2">
+                    <h2>خرید بازی cyberpunk2077</h2>
+                    <p>شناسه محصول نامعلوم</p>
+                </div>
+                <div class="selectors">
+                    <label for="mainSelect">پلتفرم مورد نظر:</label>
+                    <select id="mainSelect" onchange="updateSubSelect()">
+                        <option value="">-- لطفا انتخاب کنید --</option>
+                        <option value="ps">playstation</option>
+                        <option value="xb">xbox</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="subSelect">انتخاب ظرفیت:</label>
+                    <select id="subSelect">
+                        <option value="">-- ابتدا پلتفرم را انتخاب کنید --</option>
+
+                        <option value="1" class="ps">ظرفیت 1</option>
+                        <option value="2" class="ps">ظرفیت 2</option>
+                        <option value="3" class="ps">ظرفیت 3</option>
+
+                        <option value="full" class="xb">ظرفیت کامل</option>
+                        <option value="home" class="xb">ظرفیت هوم</option>
+                        <option value="switch" class="xb">ظرفیت سوییچ</option>
+                    </select>
+                    <div class="pbtn">
+                        <button>افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
